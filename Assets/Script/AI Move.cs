@@ -26,6 +26,10 @@ public class AIMove : MonoBehaviour
         if (dist < 2)
         {
             index++;
+            if (index == 5)
+            {
+                index = 0;
+            }
         }
     }
 }
