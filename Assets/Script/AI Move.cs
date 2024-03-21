@@ -4,32 +4,42 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+
 public class AIMove : MonoBehaviour
 {
+    public FieldOfView fieldOfView;
     [SerializeField]
     private NavMeshAgent agent;
 
     [SerializeField] private Transform[] target;
 
-    private int index = 0;
+    [SerializeField] private GameObject player;
+
+    private int _index = 0;
 
     private void Start()
     {
-        agent.SetDestination((target[index].position));
+        agent.SetDestination((target[_index].position));
     }
 
     // Update is called once per frame
     void Update()
     {
-        agent.SetDestination((target[index].position));
-        var dist = Vector3.Distance(target[index].transform.position,transform.position);
+        agent.SetDestination((target[_index].position));
+        var dist = Vector3.Distance(target[_index].transform.position,transform.position);
         if (dist < 2)
         {
-            index++;
-            if (index == 5)
+            _index++;
+            if (_index == 5)
             {
-                index = 0;
+                _index = 0;
             }
+        }
+        
+        //Détection du joueur
+        if (fieldOfView.Detect(transform, player))
+        {
+            agent.SetDestination(player.transform.position);
         }
     }
 }

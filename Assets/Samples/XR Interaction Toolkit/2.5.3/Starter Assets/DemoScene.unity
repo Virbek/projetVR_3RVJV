@@ -2693,7 +2693,7 @@ GameObject:
   - component: {fileID: 447857283}
   m_Layer: 0
   m_Name: Wall (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3008,7 +3008,7 @@ GameObject:
   - component: {fileID: 488673935}
   m_Layer: 0
   m_Name: Wall (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4552,7 +4552,7 @@ GameObject:
   - component: {fileID: 687633690}
   m_Layer: 0
   m_Name: Wall Front
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5658,7 +5658,7 @@ GameObject:
   - component: {fileID: 832869129}
   m_Layer: 0
   m_Name: Wall (14)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -9509,7 +9509,7 @@ GameObject:
   - component: {fileID: 1316114384}
   m_Layer: 0
   m_Name: Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -10483,7 +10483,7 @@ GameObject:
   - component: {fileID: 1569297498}
   m_Layer: 0
   m_Name: Wall Behind
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -11224,6 +11224,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 764c1df2df17dab488bb828b05e1a1df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fieldOfView:
+    detectionRadius: 20
+    detectionAngle: 120
+    obstacleLayerMask:
+      serializedVersion: 2
+      m_Bits: 0
   agent: {fileID: 1645336895}
   target:
   - {fileID: 107323623}
@@ -11231,6 +11237,7 @@ MonoBehaviour:
   - {fileID: 2107344484}
   - {fileID: 777702412}
   - {fileID: 1680462834}
+  player: {fileID: 1646521640}
 --- !u!195 &1645336895
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -11334,13 +11341,19 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1645336893}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: 0.43333048, z: -0, w: 0.90123516}
   m_LocalPosition: {x: 1.99, y: 1.39, z: -29.418243}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 51.358, z: 0}
+--- !u!1 &1646521640 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7313654230448209575, guid: 895f6f3c2d334633b5800312285058d2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1731298970}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1659313156
 GameObject:
   m_ObjectHideFlags: 0
@@ -11355,7 +11368,7 @@ GameObject:
   - component: {fileID: 1659313157}
   m_Layer: 0
   m_Name: pillar
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -11831,7 +11844,7 @@ PrefabInstance:
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -2.87
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
@@ -11841,7 +11854,7 @@ PrefabInstance:
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.81
+      value: -16.98
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
@@ -18328,7 +18341,7 @@ GameObject:
   - component: {fileID: 1914785894}
   m_Layer: 0
   m_Name: Wall Left
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -18630,7 +18643,7 @@ GameObject:
   - component: {fileID: 1937658856}
   m_Layer: 0
   m_Name: Wall Right
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
