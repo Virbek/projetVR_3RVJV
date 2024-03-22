@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.AI.Navigation.Samples;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -12,6 +13,9 @@ public class AIMove : MonoBehaviour
     private NavMeshAgent agent;
 
     [SerializeField] private Transform[] target;
+    
+    [SerializeField]
+    private Transform spawn;
 
     [SerializeField] private GameObject player;
 
@@ -40,6 +44,12 @@ public class AIMove : MonoBehaviour
         if (fieldOfView.Detect(transform, player))
         {
             agent.SetDestination(player.transform.position);
+        }
+        
+        var distPlayer = Vector3.Distance(player.transform.position,transform.position);
+        if (distPlayer < 2)
+        {
+            player.transform.position = spawn.position;
         }
     }
 }
