@@ -1312,7 +1312,11 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1565887663999455713, guid: 3e07eccb5e6f459d886de95044adb1d9,
         type: 3}
       insertIndex: -1
+<<<<<<< HEAD
       addedObject: {fileID: 1429876524}
+=======
+      addedObject: {fileID: 1429876522}
+>>>>>>> f7db83570c2d13aa914113756f7d5be8a3f68569
   m_SourcePrefab: {fileID: 100100000, guid: 3e07eccb5e6f459d886de95044adb1d9, type: 3}
 --- !u!4 &208985961 stripped
 Transform:
@@ -3951,7 +3955,10 @@ Transform:
   - {fileID: 701471070}
   - {fileID: 2107344484}
   - {fileID: 777702412}
+<<<<<<< HEAD
   - {fileID: 1131591299}
+=======
+>>>>>>> f7db83570c2d13aa914113756f7d5be8a3f68569
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &547229427
@@ -10380,7 +10387,11 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 208985960}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!114 &1429876524
+=======
+--- !u!114 &1429876522
+>>>>>>> f7db83570c2d13aa914113756f7d5be8a3f68569
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10409,7 +10420,11 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
+<<<<<<< HEAD
   m_NavMeshData: {fileID: 23800000, guid: d18ade3acdb187d4b8f1cd9073c32f9c, type: 2}
+=======
+  m_NavMeshData: {fileID: 23800000, guid: 131b7f85500d36f4ba9a50ff8ed35f49, type: 2}
+>>>>>>> f7db83570c2d13aa914113756f7d5be8a3f68569
   m_BuildHeightMesh: 0
 --- !u!1 &1486677401
 GameObject:
@@ -11652,8 +11667,13 @@ MonoBehaviour:
   - {fileID: 701471070}
   - {fileID: 2107344484}
   - {fileID: 777702412}
+<<<<<<< HEAD
   - {fileID: 1131591299}
   spawn: {fileID: 1666484352}
+=======
+  - {fileID: 0}
+  spawn: {fileID: 0}
+>>>>>>> f7db83570c2d13aa914113756f7d5be8a3f68569
   player: {fileID: 389004676}
 --- !u!195 &1645336895
 NavMeshAgent:
@@ -11999,7 +12019,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1661918017}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
 --- !u!1 &1666484351
+=======
+--- !u!1 &1680462833
+>>>>>>> f7db83570c2d13aa914113756f7d5be8a3f68569
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12007,6 +12031,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 1666484352}
   m_Layer: 0
   m_Name: spawn
@@ -12045,6 +12070,15 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
+=======
+  - component: {fileID: 1680462834}
+  m_Layer: 0
+  m_Name: 
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+>>>>>>> f7db83570c2d13aa914113756f7d5be8a3f68569
   m_IsActive: 0
 --- !u!4 &1680462834
 Transform:
@@ -22664,4 +22698,7 @@ SceneRoots:
   - {fileID: 1933312243}
   - {fileID: 267028731}
   - {fileID: 1323084717}
+<<<<<<< HEAD
   - {fileID: 1666484352}
+=======
+>>>>>>> f7db83570c2d13aa914113756f7d5be8a3f68569
