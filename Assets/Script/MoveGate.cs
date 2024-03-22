@@ -1,48 +1,20 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class MoveGate : MonoBehaviour
 {
-    
-    public Transform openedPosition;
-    public Transform closedPosition;
-    public Transform door;
-    
+	public float speed;
+	public Transform openedPosition;
+	public Transform gate;
+
     // Start is called before the first frame update
-    void Start()
+    
+    public void OpenDoor()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+	    gate.position = openedPosition.position;
     }
     
-    void OnTriggerEnter(Collider obj) {
-        
-       OpenDoor();
-       
-    }
-
-    void OnTriggerExit(Collider obj)
-    {
-        CloseDoor();
-    }
-
-    void OpenDoor()
-    {
-        door.position = openedPosition.position;
-    }
     
-    void CloseDoor()
-    {
-        
-        door.position = closedPosition.position;
-
-    }
 }
