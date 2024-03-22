@@ -1312,7 +1312,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1565887663999455713, guid: 3e07eccb5e6f459d886de95044adb1d9,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1429876523}
+      addedObject: {fileID: 1429876522}
   m_SourcePrefab: {fileID: 100100000, guid: 3e07eccb5e6f459d886de95044adb1d9, type: 3}
 --- !u!4 &208985961 stripped
 Transform:
@@ -3951,7 +3951,6 @@ Transform:
   - {fileID: 701471070}
   - {fileID: 2107344484}
   - {fileID: 777702412}
-  - {fileID: 1680462834}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &547229427
@@ -10024,7 +10023,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 342493560}
-  - {fileID: 1669410490}
   - {fileID: 1977453206}
   - {fileID: 1826937725}
   m_Father: {fileID: 0}
@@ -10344,21 +10342,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1316114387}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-
 --- !u!1 &1429876521 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1565887663999455713, guid: 3e07eccb5e6f459d886de95044adb1d9,
     type: 3}
   m_PrefabInstance: {fileID: 208985960}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1429876523
-
+--- !u!114 &1429876522
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-
   m_GameObject: {fileID: 1429876521}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -10382,9 +10377,8 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: a4b50fe780dbdfb498e6d593a92d67a9, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 131b7f85500d36f4ba9a50ff8ed35f49, type: 2}
   m_BuildHeightMesh: 0
-
 --- !u!1 &1486677401
 GameObject:
   m_ObjectHideFlags: 0
@@ -11626,7 +11620,8 @@ MonoBehaviour:
   - {fileID: 701471070}
   - {fileID: 2107344484}
   - {fileID: 777702412}
-  - {fileID: 1680462834}
+  - {fileID: 0}
+  spawn: {fileID: 0}
   player: {fileID: 389004676}
 --- !u!195 &1645336895
 NavMeshAgent:
@@ -11972,9 +11967,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1661918017}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-
 --- !u!1 &1680462833
-
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11982,31 +11975,28 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-
   - component: {fileID: 1680462834}
   m_Layer: 0
-  m_Name: 5eme destination
+  m_Name: 
   m_TagString: Untagged
-  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1680462834
-
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-
   m_GameObject: {fileID: 1680462833}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 54443587
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1688084782
 GameObject:
@@ -18026,7 +18016,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b199de5e16ae834ea9b84e9251de0d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  openedPosition: {fileID: 1669410490}
+  openedPosition: {fileID: 0}
   closedPosition: {fileID: 1977453206}
   door: {fileID: 342493560}
 --- !u!1 &1827899901
@@ -19256,10 +19246,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1933312246}
-    - targetCorrespondingSourceObject: {fileID: 2397676642098698959, guid: 76f3439a0ae796e4b81bee3f91f888ee,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1388090964}
   m_SourcePrefab: {fileID: 100100000, guid: 76f3439a0ae796e4b81bee3f91f888ee, type: 3}
 --- !u!1 &1933312245 stripped
 GameObject:
@@ -22598,6 +22584,7 @@ MonoBehaviour:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1680462834}
   - {fileID: 439588100}
   - {fileID: 547229428}
   - {fileID: 1014857019}
@@ -22609,7 +22596,8 @@ SceneRoots:
   - {fileID: 856966147}
   - {fileID: 1316114387}
   - {fileID: 1659313160}
-
   - {fileID: 1645336899}
   - {fileID: 544435877}
-
+  - {fileID: 1933312243}
+  - {fileID: 267028731}
+  - {fileID: 1323084717}
