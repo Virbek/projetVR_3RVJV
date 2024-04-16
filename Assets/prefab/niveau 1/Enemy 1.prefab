@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8231196055028950327}
   - component: {fileID: 1517149307368130573}
   - component: {fileID: 7696739372542897822}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,9 +120,9 @@ GameObject:
   - component: {fileID: 5845025360792356861}
   - component: {fileID: 7484466422585661449}
   - component: {fileID: 5850829790652517970}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy 1
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -275,7 +275,7 @@ GameObject:
   - component: {fileID: 4411786683481418371}
   - component: {fileID: 379548939724196189}
   - component: {fileID: 5252345104596713609}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
