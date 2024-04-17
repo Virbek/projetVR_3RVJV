@@ -16,9 +16,14 @@ public class AIMove : MonoBehaviour
     
     [SerializeField]
     private Transform spawn;
+    [SerializeField]
+    private Transform spawnHammer;
+
+    public bool focusPlayer = false;
 
 
     [SerializeField] private GameObject player;
+    [SerializeField] private GameObject hammer;
 
     private int _index = 0;
 
@@ -30,27 +35,42 @@ public class AIMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        agent.SetDestination((target[_index].position));
-        var dist = Vector3.Distance(target[_index].transform.position,transform.position);
-        if (dist < 2)
-        {
-            _index++;
-            if (_index == 5)
-            {
-                _index = 0;
-            }
-        }
-        
-        //Détection du joueur
-        if (fieldOfView.Detect(transform, player))
+        if (focusPlayer)
         {
             agent.SetDestination(player.transform.position);
+            var distPlayer = Vector3.Distance(player.transform.position,transform.position);
+            if (distPlayer < 2)
+            {
+                player.transform.position = spawn.position;
+                hammer.transform.position = spawnHammer.position;
+            } 
+        }
+        else
+        {
+            agent.SetDestination((target[_index].position));
+            var dist = Vector3.Distance(target[_index].transform.position,transform.position);
+            if (dist < 2)
+            {
+                _index++;
+                if (_index == target.Length)
+                {
+                    _index = 0;
+                }
+            }
+        
+            //Détection du joueur
+            if (fieldOfView.Detect(transform, player))
+            {
+                agent.SetDestination(player.transform.position);
+            }
+        
+            var distPlayer = Vector3.Distance(player.transform.position,transform.position);
+            if (distPlayer < 2)
+            {
+                player.transform.position = spawn.position;
+                hammer.transform.position = spawnHammer.position;
+            } 
         }
         
-        var distPlayer = Vector3.Distance(player.transform.position,transform.position);
-        if (distPlayer < 2)
-        {
-            player.transform.position = spawn.position;
-        }
     }
 }
