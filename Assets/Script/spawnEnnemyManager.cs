@@ -13,18 +13,8 @@ public class SpawnEnemyManager : MonoBehaviour
     public List<GameObject> allEnemy = new List<GameObject>();
     private float start = 0f;
     private float spawn = 5f;
-
-    private void Awake()
-    {
-        if (instance != null && instance != this)
-        {
-            Destroy(gameObject);
-        }
-        else
-        {
-            instance = this;
-        }
-    }
+    public bool isActive = true;
+    
     private void Start()
     {
         var newEnemy = Instantiate(enemy, transform.position, quaternion.identity);
@@ -35,15 +25,17 @@ public class SpawnEnemyManager : MonoBehaviour
     void Update()
     {
         start += Time.deltaTime;
-        if (start>= spawn)
+        if (isActive)
         {
-            if (allEnemy.Count < 6)
+            if (start>= spawn)
             {
-                var newEnemy = Instantiate(enemy, transform.position, quaternion.identity);
-                newEnemy.GetComponent<EnemyAttack>().setPlayer(player);
+                if (allEnemy.Count < 6)
+                {
+                    var newEnemy = Instantiate(enemy, transform.position, quaternion.identity);
+                    newEnemy.GetComponent<EnemyAttack>().setPlayer(player);
+                }
+                start = 0f;
             }
-            start = 0f;
         }
-        
     }
 }

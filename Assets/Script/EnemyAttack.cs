@@ -3,10 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
+
 public class EnemyAttack : MonoBehaviour
 {
     [SerializeField]private NavMeshAgent agent;
-    private GameObject _player;
+    private GameObject player;
 
     private void Start()
     {
@@ -16,7 +18,12 @@ public class EnemyAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        agent.SetDestination(_player.transform.position);
+        agent.SetDestination(player.transform.position);
+        var distPlayer = Vector3.Distance(player.transform.position,transform.position);
+        if (distPlayer < 2)
+        {
+            SceneManager.LoadScene("Niveau 1");
+        }
     }
 
     private void OnDestroy()
@@ -26,6 +33,6 @@ public class EnemyAttack : MonoBehaviour
 
     public void setPlayer(GameObject truePlayer)
     {
-        _player = truePlayer;
+        player = truePlayer;
     }
 }
