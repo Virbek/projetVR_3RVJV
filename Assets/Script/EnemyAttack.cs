@@ -12,7 +12,7 @@ public class EnemyAttack : MonoBehaviour
 
     private void Start()
     {
-        SpawnEnemyManager.instance.allEnemy.Add(gameObject);
+        SpawnManager.instance.allEnemy.Add(gameObject);
     }
 
     // Update is called once per frame
@@ -28,7 +28,7 @@ public class EnemyAttack : MonoBehaviour
 
     private void OnDestroy()
     {
-        SpawnEnemyManager.instance.allEnemy.Remove(gameObject);
+        SpawnManager.instance.allEnemy.Remove(gameObject);
     }
 
     public void setPlayer(GameObject truePlayer)

@@ -5,16 +5,16 @@ using UnityEngine;
 
 public class ResetEnemies : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> allSpawner = new List<GameObject>();
+    [SerializeField] private GameObject spawner;
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            foreach (var s in allSpawner)
+            foreach (var enemy in SpawnManager.instance.allEnemy)
             {
-                s.GetComponent<SpawnEnemyManager>().allEnemy.Clear();
-                s.GetComponent<SpawnEnemyManager>().isActive = false;
+                Destroy(enemy);
             }
+           spawner.gameObject.SetActive(false);
         }
     }
 
@@ -22,10 +22,7 @@ public class ResetEnemies : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            foreach (var s in allSpawner)
-            {
-                s.GetComponent<SpawnEnemyManager>().isActive = true;
-            }
+            spawner.gameObject.SetActive(true);
         }
     }
 }
