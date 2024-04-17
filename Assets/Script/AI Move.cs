@@ -17,6 +17,7 @@ public class AIMove : MonoBehaviour
     [SerializeField]
     private Transform spawn;
 
+
     [SerializeField] private GameObject player;
 
     private int _index = 0;
