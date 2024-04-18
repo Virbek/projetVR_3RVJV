@@ -924,7 +924,7 @@ PrefabInstance:
     - target: {fileID: 312231460338306226, guid: 4c015019bc705094a8b16802bc9c3fca,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.9
+      value: 2.99
       objectReference: {fileID: 0}
     - target: {fileID: 312231460338306226, guid: 4c015019bc705094a8b16802bc9c3fca,
         type: 3}
@@ -2058,7 +2058,7 @@ PrefabInstance:
     - target: {fileID: 312231460338306226, guid: 4c015019bc705094a8b16802bc9c3fca,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.87
+      value: 2.99
       objectReference: {fileID: 0}
     - target: {fileID: 312231460338306226, guid: 4c015019bc705094a8b16802bc9c3fca,
         type: 3}
@@ -2257,7 +2257,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 45a550e9b0f3b904ab43e37773f321b3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2367,7 +2367,7 @@ PrefabInstance:
     - target: {fileID: 312231460338306226, guid: 4c015019bc705094a8b16802bc9c3fca,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.9
+      value: 2.99
       objectReference: {fileID: 0}
     - target: {fileID: 312231460338306226, guid: 4c015019bc705094a8b16802bc9c3fca,
         type: 3}
@@ -3425,7 +3425,7 @@ PrefabInstance:
     - target: {fileID: 312231460338306226, guid: 4c015019bc705094a8b16802bc9c3fca,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.9
+      value: 2.99
       objectReference: {fileID: 0}
     - target: {fileID: 312231460338306226, guid: 4c015019bc705094a8b16802bc9c3fca,
         type: 3}
@@ -3548,7 +3548,7 @@ PrefabInstance:
     - target: {fileID: 312231460338306226, guid: 4c015019bc705094a8b16802bc9c3fca,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.9
+      value: 2.99
       objectReference: {fileID: 0}
     - target: {fileID: 312231460338306226, guid: 4c015019bc705094a8b16802bc9c3fca,
         type: 3}
