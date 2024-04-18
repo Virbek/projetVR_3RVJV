@@ -10,6 +10,9 @@ public class ChangeTarget : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        enemy.GetComponent<AIMove>().focusPlayer = true;
+        if (other.gameObject.CompareTag("Player"))
+        {
+            enemy.GetComponent<AIMove>().focusPlayer = true; 
+        }
     }
 }
