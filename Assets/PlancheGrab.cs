@@ -13,6 +13,7 @@ public class PlancheGrab : MonoBehaviour
         { 
             transform.parent = other.gameObject.transform;
             gameObject.AddComponent<XRGrabInteractable>();
+            gameObject.AddComponent<Rigidbody>();
             gameObject.GetComponent<Rigidbody>().useGravity = false;
         }
     }
@@ -20,7 +21,10 @@ public class PlancheGrab : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         transform.parent = null;
-        gameObject.GetComponent<Rigidbody>().useGravity = true;
+        if (TryGetComponent<Rigidbody>(out Rigidbody rigidbody))
+        {
+            rigidbody.useGravity = true;
+        }
 
     }
 }

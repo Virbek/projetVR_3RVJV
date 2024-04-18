@@ -16,6 +16,10 @@ public class Niveau : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        NiveauSuivant();
+        if(other.gameObject.CompareTag("Player"))
+        {
+            NiveauSuivant();
+        }
+        
     }
 }

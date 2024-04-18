@@ -9,7 +9,6 @@ public class killLight : MonoBehaviour
 
     private float timeToKill = 0f;
     private bool start = false;
-    private float startTime = 0f;
 
     private GameObject enemy;
     // Update is called once per frame

@@ -24,7 +24,7 @@ public class SpawnEnemyManager : MonoBehaviour
         start += Time.deltaTime;
         if (start>= spawn)
         {
-            if (SpawnManager.instance.allEnemy.Count < 6)
+            if (SpawnManager.instance.allEnemy.Count < 3)
             {
                 var newEnemy = Instantiate(enemy, transform.position, quaternion.identity);
                 newEnemy.GetComponent<EnemyAttack>().setPlayer(player);
