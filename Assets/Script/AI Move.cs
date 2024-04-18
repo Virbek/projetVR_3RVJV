@@ -41,6 +41,7 @@ public class AIMove : MonoBehaviour
             var distPlayer = Vector3.Distance(player.transform.position,transform.position);
             if (distPlayer < 2)
             {
+                focusPlayer = false;
                 player.transform.position = spawn.position;
                 hammer.transform.position = spawnHammer.position;
             } 
@@ -52,7 +53,7 @@ public class AIMove : MonoBehaviour
             if (dist < 2)
             {
                 _index++;
-                if (_index == target.Length)
+                if (_index >= 5)
                 {
                     _index = 0;
                 }
